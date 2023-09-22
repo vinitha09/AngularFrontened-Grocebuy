@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row" style="margin-left: 500px; padding-top: 50px;" >
+        <h1 style="margin-bottom:0%; font-weight: bold; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 35px;">Let's get started</h1>
+    </div>
+    <div class="row" style="margin-left: 500px; ">
+       <h3 >Create account to see our top picks for you!</h3> 
+    </div>
+   <div class="row" style="margin-left: 640px;" >
+  
+
+       <div class="row" style="margin-left: -150px;" >
+        <form>
+            <label>Mobile</label><br/>
+            <input type="text" [(ngModel)]="MobileNumber" placeholder="Enter Mobile" size="40px"><br />
+         
+            <br />
+            <div *ngIf="MobileNumber==10">mobile number should not be less than ten digits</div>
+            <label>Password</label><br/>
+            <input type="text" [(ngModel)]="Password" placeholder="Enter Password" size="40px"><br />
+          
+            <br />
+            <label>Confirmation Password</label><br/>
+            <input type="text" [(ngModel)]="ConfirmPassword" placeholder="Eneter Confirmation Password" size="40px"><br />
+         
+            <br />
+            <section style="margin-left: 8px;">
+                <mat-checkbox [(ngModel)]="terms">I agree with Terms and Conditions</mat-checkbox>
+            
+            </section>
+            <button mat-raised-button color="green" style="background-color: green; color: white;width: 335px;">Create Account</button>
+              <br/><br/>
+        </form>
+        </div>
+    </div>
+    
+</div>

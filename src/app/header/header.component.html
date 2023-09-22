@@ -1,0 +1,77 @@
+<!--<p>header works!</p>
+<a [routerLink]="['/']" class="btn btn-primary">Home</a>
+<a [routerLink]="['/login']" class="btn btn-primary">login</a>
+<a [routerLink]="['/registration']" class="btn btn-primary">registration</a>
+<a [routerLink]="['/orderlist']" class="btn btn-primary">orderlist</a>
+<a [routerLink]="['/updateprofile']" class="btn btn-primary">updateprofile</a>
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <style>
+            a{
+                color: black;
+                text-decoration: none;
+                padding: 2%;
+            }
+        </style>
+    </head>
+
+    <body>
+
+<div class="row" style="height: 110px;">
+<div class="col-lg-2">
+    <div style="color: azure;width: 100px:float: left;height:20px;">
+        <div style="float: left;width: 200px; margin-left: 10px;padding-top: 10px;">
+            <img src="assets/logo.jpg" width="150px"/>
+            
+        </div>
+    </div>
+</div>
+<div class="col-lg-2" style="margin-left: -60px; padding-top: 10px;">
+    <button mat-mini-fab style="background-color: whitesmoke;">
+        <mat-icon style="color: black;">location_on</mat-icon>
+    </button>
+</div>
+
+<div class="col-lg-2">
+    <p style="color: black;padding-top: 18px; margin-left: -200px;">
+        select location
+    </p>
+
+
+</div>
+<div class="col-lg-2" style="padding-top: 15px; margin-left:-320px;">
+    <input type="text" name="Search" placeholder="Search for Products..">
+    
+</div>
+<div class="col-lg-2" style="padding-top: 15px; margin-left: -70px;" >
+    <mat-icon matPrefix style="background-color: green;height: 30px; width: 30px; padding-left: 5px;padding-top: 5px;">search</mat-icon>
+   
+</div>
+<div class="col-lg-1" style="padding-top: 15px; margin-left: 500px;">
+    <button mat-mini-fab style="background-color: whitesmoke;">
+        <mat-icon style="color: black;">exit_to_app</mat-icon>
+       
+    </button>
+</div>
+<div class="col-lg-1" style="padding-top: 15px; margin-left: -60px;">
+    <button mat-mini-fab style="background-color: whitesmoke;">
+        <mat-icon style="color: black;">shopping_cart</mat-icon>
+       
+
+    </button>
+    
+    
+</div>
+<div class="row" style="background-color: green; height: 50px;padding-bottom:10px;">
+<p style="color: aliceblue; padding-left: 70%; font-weight: bold; font-size: 15px;">
+    
+    <a [routerLink]="['/home']" class="btn btn" style="color: white;">Back to home </a>
+    <a [routerLink]="['/promos']" class="btn btn" style="color: white; height: 50px; margin-bottom:5px;background-color: orange; padding-top: 12px;">promos </a>
+    </p>
+</div>
+</div>
+</body>
+</html>
